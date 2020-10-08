@@ -13,12 +13,14 @@ package cse360assignment02;
 public class AddingMachine {
 
 	private int total;
+	private String record;
 	/**
 	 * Constructor instantiates AddingMachine object, giving the total int 0.
 	 */
 	public AddingMachine() {
 		// TODO Auto-generated constructor stub
 		total = 0;
+		record = "0";
 	}
 	/**
 	 * getTotal() returns the total variable int.
@@ -26,7 +28,7 @@ public class AddingMachine {
 	 * @return total
 	 */
 	public int getTotal () {
-	    return 0;
+	    return total;
 	  }
 	  /**
 	   * add(int value) adds value to total.
@@ -34,6 +36,8 @@ public class AddingMachine {
 	   * @param (int value)
 	   */
 	  public void add (int value) {
+		  total = total + value;
+		  record = record + " " + "+" + " " + String.valueOf(value);
 	  }
 	  /**
 	   * subtract(int value) subtracts value from total.
@@ -41,6 +45,8 @@ public class AddingMachine {
 	   * @param value
 	   */
 	  public void subtract (int value) {
+		  total = total - value;
+		  record = record + " " + "-" + " " + String.valueOf(value);
 	  }
 	  /**
 	   * toString() method returns the String where all the operations on total have been recorded.
@@ -48,7 +54,7 @@ public class AddingMachine {
 	   * @param ()
 	   */
 	  public String toString () {
-	    return "";
+	    return record;
 	  }
 	  /**
 	   * clear() method makes the record String empty and puts the total back to 0
@@ -56,6 +62,8 @@ public class AddingMachine {
 	   * @param ()
 	   */
 	  public void clear() {
+		  record = "0";
+		  total = 0;
 	  }
 
 }
