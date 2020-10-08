@@ -1,7 +1,7 @@
 /**
  * An AddingMachine object is meant to add and subtract values from some total (starting at 0), and keep track of those operations in a string.
  * @author Kyle J. Atkinson
- * @version 1.0
+ * @version 1.1
  * @since 7-10-2020
  * 
  */
